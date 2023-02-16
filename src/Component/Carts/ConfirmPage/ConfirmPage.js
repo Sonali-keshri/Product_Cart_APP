@@ -154,7 +154,7 @@ const ConfirmPage = () => {
         <div className='container my-3 d-flex justify-content-between shadow' >
           <div>
             <small>
-              1 ITEM
+              {count} ITEM
             </small>
             <h3 className='total'>$5061.11</h3>
           </div>

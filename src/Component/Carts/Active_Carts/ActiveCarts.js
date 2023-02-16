@@ -69,7 +69,7 @@ const ActiveCarts = () => {
       </table>
         ):(
           <div className="d-flex m-auto align-items-center" style={{width:"60%", height:"50vh", textAlign:"center"}}>
-            <h2>No Data Avilable! Please create order by clicking on plus button</h2>
+            <h1>No Data Avilable! Please create order by clicking on plus button</h1>
           </div>
         )
         }

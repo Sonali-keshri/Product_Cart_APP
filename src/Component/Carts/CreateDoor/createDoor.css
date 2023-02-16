@@ -1,0 +1,17 @@
+.createDoorNav{
+    color: white;
+    left: 0;
+    background-color: #34495E;
+    padding: 1rem;
+    width: 100%;
+}
+.backBtn{
+    cursor: pointer;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px){
+   .createDoorContainer{
+    width: 100% !important;
+   } 
+}

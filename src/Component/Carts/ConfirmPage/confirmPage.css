@@ -1,0 +1,59 @@
+.addressBtn{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.addressBtn button:hover{
+    background-color: rgb(211, 34, 34);
+    color: rgb(243, 237, 237) !important;
+}
+.H  eadline{
+    max-width: 800px;
+}
+
+.singleBtn{
+    border-radius: 0 !important;
+    border: 1px solid rgb(170, 170, 170) !important;
+    width: 300px !important ;
+    
+}
+
+@media screen and (max-width: 414px) {
+    .dateContainer{
+        width: 100% !important;
+    }
+    .pricingContainer{
+        width: 100% !important;
+    }
+    .secondBox{
+        flex-direction: column;
+    }
+   .form{
+    width: 100%;
+   }
+   .data{
+    width: 100%;
+   }
+   .count{
+    flex-direction: column;
+   }
+   .lastPageBtn{
+    padding: .6rem 0 !important;
+    font-size: .7rem !important;
+   }
+   .firstBox{
+    width: 100% !important;
+   }
+   .firstBox>div{
+    width: 100%;
+   }
+   .total{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+   }
+   .placeOrder{
+        padding: .6 !important;
+        font-size: .9rem !important;
+   }
+}

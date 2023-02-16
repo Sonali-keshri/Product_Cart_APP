@@ -1,0 +1,11 @@
+
+.navMenu li a{
+    color: white;
+    font-size: 1.2rem;
+    margin-inline: 1.5rem ;
+    /* font-weight: 600; */
+}
+.navMenu li a:hover{
+    color: white;
+    border-bottom: 1px solid yellow;
+}

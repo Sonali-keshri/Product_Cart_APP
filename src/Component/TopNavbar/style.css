@@ -1,0 +1,11 @@
+
+.circleLogo{
+    background-color: #ED357E !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+.navMenuIcon li {
+    padding: 0 1rem;
+}

@@ -1,0 +1,36 @@
+.secondnavMenu li a{
+    color: rgb(109, 108, 108);
+    font-size: 1.4rem;
+    margin-inline: 10px;
+}
+.secondnavMenu li a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+.searchInput{
+    border-radius: 5px;
+    border: 2px solid rgb(37, 35, 35);
+    padding: 2px 8px;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+}
+
+
+@media screen and (max-width:414px) {
+    .secondnavMenu{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        text-align: end;
+    }
+    .searchInput{
+    width: 100%;
+    margin-bottom: .5rem;
+    margin-inline: 1rem;
+    }
+}

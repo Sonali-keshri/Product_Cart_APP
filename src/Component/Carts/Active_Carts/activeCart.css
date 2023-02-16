@@ -1,0 +1,45 @@
+.tablet{
+    display: none;
+}
+
+.plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plus>span{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+
+@media screen and (max-width: 768px) {
+    .big-screen{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+    .plus>span{
+        width: 90px;
+        height: 90px;
+        font-size: 3.3rem;
+    }
+}
+@media screen and (max-width: 414px) {
+    .plus>span{
+        width: 70px;
+        height: 70px;
+        font-size: 2.6rem;
+    }
+}

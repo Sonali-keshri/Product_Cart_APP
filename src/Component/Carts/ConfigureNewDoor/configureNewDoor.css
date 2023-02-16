@@ -1,0 +1,39 @@
+.progressBar{
+    width: 50%;
+    height: 5px !important;
+    margin: auto;
+} 
+
+.progress-level{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+
+.doneBtn{
+    width: 90px;
+    padding: .2rem ;
+    border: 2px solid rgb(194, 191, 191);
+    border-radius:2rem;
+}
+.doneBtn:hover{
+    background-color: #E4E4E4;
+    border-color: #E4E4E4;
+}
+
+@media screen and (max-Width: 820px){
+    .wrapper{
+        width: 75% !important;
+    }
+    
+}
+@media screen and (max-Width: 512px){
+    .wrapper{
+        width: 100% !important;
+    }
+    
+}

@@ -1,4 +1,4 @@
-import React,{useContext, useEffect, useState} from "react";
+import React,{ useEffect, useState} from "react";
 import './configurePage.css'
 import { useNavigate } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
@@ -77,8 +77,8 @@ const ConfigurePage = () => {
       <div className="m-3 d-flex justify-content-end">
           <button
             type="button"
-            className="btn btn-primary configureBtn"
-            style={{ color: "white", border: "none", backgroundColor: "brown" , position:"absolute", bottom:"10px"}}
+            className="btn btn-danger configureBtn"
+            style={{ color: "white", border: "none", position:"absolute", bottom:"10px"}}
             onClick={() => Navigate("/configureNewDoor")}
           >
             CONFIGURE

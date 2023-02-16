@@ -51,12 +51,11 @@ const ConfigureNewDoor = () => {
       </div>
       <div className="container mt-5 mb-5 w-50 wrapper">
         <div className="container">
-          <div class="progress ">
+          <div class="progress my-3 " style={{height:"5px"}}>
             <div
               class={`progress-bar w-${now} bg-success `}
-              style={{height:"5px"}}
               role="progressbar"
-              aria-valuenow={`"${now}"`}
+              aria-valuenow={now}
               aria-valuemin="0"
               aria-valuemax="100"
             ></div>

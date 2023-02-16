@@ -4,13 +4,12 @@ import "./activeCart.css";
 import CreateOrder from "./CreateOrder";
 
 
+
 const ActiveCarts = () => {
 
   const { searchTerm } = useContext(AppContext);
   
   const [allData, setAllData] = useState([])
-
-  
   
   useEffect(() => {
     const data = window.localStorage.getItem('activeOptions')
@@ -23,7 +22,9 @@ const ActiveCarts = () => {
   return (
     <div>
       <CreateOrder />
-      <table className="table table-striped table-hover big-screen">
+
+        { allData ? (
+        <table className="table table-striped table-hover big-screen">
         <thead>
           <tr>
             <th>Assembly Type</th>
@@ -36,7 +37,7 @@ const ActiveCarts = () => {
         </thead>
         <tbody>
           {
-              allData &&
+            allData ? (          
               allData.filter(item => item.section && item.section.toLowerCase().includes(searchTerm.toLowerCase()))
                 .map((item, index) => {
                   return (
@@ -49,10 +50,29 @@ const ActiveCarts = () => {
                       <td>{item.section}</td>
                     </tr>
                   )
-                })
+                })):
+                (
+                  <div>
+
+                    <h1>No data </h1>
+                  </div>
+                )
+                
+                // (
+                //   <div > 
+                //     <h1>Now! There is No data, Please CreateOrder by clicking on plus button.</h1>
+                //   </div>
+                // )
+
             }
         </tbody>
       </table>
+        ):(
+          <div className="d-flex m-auto align-items-center" style={{width:"60%", height:"50vh", textAlign:"center"}}>
+            <h2>No Data Avilable! Please create order by clicking on plus button</h2>
+          </div>
+        )
+        }
 
       {/* Tablet Container */}
 

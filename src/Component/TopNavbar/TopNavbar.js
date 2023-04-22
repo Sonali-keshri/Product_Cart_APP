@@ -13,8 +13,8 @@ const TopNavbar = () => {
             className="navbar-brand d-flex justify-content-center align-items-center gap-1"
             href="/"
           >
-            <h4 className="circleLogo">f1</h4>
-            <h5>studioz</h5>
+            <h4 className="circleLogo">LOGO</h4>
+            {/* <h5>studioz</h5> */}
           </a>
           <button
             className="navbar-toggler"
@@ -45,11 +45,11 @@ const TopNavbar = () => {
                 <img src={icon3} alt="icon3"/>
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#">
                 <img src={icon4} alt="icon4"/>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
